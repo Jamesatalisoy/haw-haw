@@ -323,7 +323,7 @@ body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);min
       <h2>Giriş Yap</h2>
       <div class="input-group">
         <label>Kullanıcı Adı</label>
-        <input type="text" id="loginUser" placeholder="Yiğit, Doruk, Göktürk..." autocomplete="username">
+        <input type="text" id="loginUser" placeholder="Yiğit, Doruk, Göktürk..." autocomplete="username" onkeydown="if(event.key==='Enter') doLogin()">
       </div>
       <div class="error-msg" id="loginError">❌ Kullanıcı adı bulunamadı!</div>
       <br>
